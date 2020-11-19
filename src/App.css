@@ -75,6 +75,13 @@
   width: 100%;
   margin: auto 0;
   box-shadow: 2px 3px 2px gray;
+  display: flex;
+}
+.plus{
+  border-right: 5px rgb(24, 212, 24) solid;
+}
+.minus{
+  border-right: red 5px solid;
 }
 .del-btn{
   background-color: red;
@@ -91,7 +98,12 @@
   opacity: 1;
 }
 .transaction-amount{
-  text-align: left;
+  float: right;
+  margin: 5px;
+  font-family: 'Roboto';
+}
+.transaction-name{
+  float: left;
   margin: 5px;
   font-family: 'Roboto';
 }
@@ -130,26 +142,24 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 .add-transaction-text:focus{
-  border: 3px solid rgb(235, 165, 238);
+  border: 3px solid rgb(24, 212, 24);
 }
 .add-transaction-amount:focus{
-  border: 3px solid rgb(235, 165, 238) ;
+  border: 3px solid rgb(24, 212, 24) ;
 }
 .transaction-btn{
   margin: 5px 0;
   width: 100%;
   border-radius: 2px;
   border-style: none;
-  border: 1px solid rgb(173, 123, 175);
+  border: 1px solid rgb(65, 236, 65);
   height: 30px;
-  background-color:rgb(235, 165, 238) ;
+  background-color: rgb(24, 212, 24) ;
   color: white;
   font-size: large;
+  transition: 0.3s ease-in-out;
 }
-.transaction-btn:focus{
-  border: 3px solid rgb(235, 165, 238);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  outline: none;
-  background-color:  rgb(173, 123, 175);
+.transaction-btn:hover{
+  border: 3px solid rgb(2, 95, 9);
+  background-color:  rgb(48, 218, 26);
 }
