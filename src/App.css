@@ -98,6 +98,58 @@
 .add-transaction{
   text-align: left;
 }
-.add-transaction-heading{
+.add-transaction-heading, .add-transaction-amount-heading{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+}
+.add-transaction-text{
+  border: 0.5px black solid;
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  font-size: large;
+  box-sizing: border-box;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+.add-transaction-amount{
+  border: 0.5px black solid;
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  font-size: large;
+  box-sizing: border-box;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.add-transaction-text:focus{
+  border: 3px solid rgb(235, 165, 238);
+}
+.add-transaction-amount:focus{
+  border: 3px solid rgb(235, 165, 238) ;
+}
+.transaction-btn{
+  margin: 5px 0;
+  width: 100%;
+  border-radius: 2px;
+  border-style: none;
+  border: 1px solid rgb(173, 123, 175);
+  height: 30px;
+  background-color:rgb(235, 165, 238) ;
+  color: white;
+  font-size: large;
+}
+.transaction-btn:focus{
+  border: 3px solid rgb(235, 165, 238);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  background-color:  rgb(173, 123, 175);
 }
