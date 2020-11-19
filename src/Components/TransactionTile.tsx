@@ -1,22 +1,21 @@
-import React,{useContext} from 'react'
-import '../App.css'
-import {GlobalContext } from '../Context/GlobalProvider'
+import React, { useContext } from "react";
+import "../App.css";
+import { GlobalContext } from "../Context/GlobalProvider";
 
-const TransactionTile = () => {
+const TransactionTile = ({ transaction }: any) => {
 
-    const { transactions } = useContext(GlobalContext)
+  const { deleteTransaction } = useContext(GlobalContext);
 
-    console.log(transactions);
-    
-    return (
-        <div className="transaction-tile" onClick = { () => console.log('pressed')} >
-            {/* <button className="del-btn">X</button> */}
-             <li className="transaction-item minus">
-                <p className="transaction-name">Flower</p>
-                <p className="transaction-amount">1000</p>
-        </li>
-        </div>
-    )
-}
+  const sign = transaction.amount > 0 ? "+" : "-";
 
-export default TransactionTile
+  return (
+    <div className="transaction-tile" onClick={() => deleteTransaction(transaction.id)}>
+      <li className={`transaction-item ${ transaction.amount > 0 ? "plus" :"minus" }`}>
+        <p className="transaction-name">{transaction.name}</p>
+        <p className="transaction-amount">{sign}{transaction.amount}</p>
+      </li>
+    </div>
+  );
+};
+
+export default TransactionTile;

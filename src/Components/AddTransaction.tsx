@@ -31,15 +31,17 @@ const newTransaction = (event: any) => {
 
 
     return (
-        <div className="add-transaction">
+        <form>
+        <div className="add-transaction form-control">
             <p className="add-transaction-heading" >Add A Transaction</p>
             <hr />
             <p className="add-transaction-heading">Name:</p>
-            <input type="text" value={name} className="add-transaction-text" placeholder="Enter A Transaction"  onChange={ (event) => setName(event.target.value) } required />
+            <input type="text" value={name} className="add-transaction-text" placeholder="Enter A Transaction" required  onChange={ (event) => setName(event.target.value) }  />
             <p className="add-transaction-amount-heading">Name:</p>
-            <input type="number" value={amount} className="add-transaction-amount" placeholder="Enter An Amount" onChange={ (event) => setAmount(event.target.value) } required />
+            <input type="number" value={amount} className="add-transaction-amount" placeholder="Enter An Amount" required onChange={ (event) => setAmount(event.target.value) }  />
             <button className="transaction-btn"  onClick={newTransaction} >Add Transaction</button>
         </div>
+        </form>
     )
 }
 

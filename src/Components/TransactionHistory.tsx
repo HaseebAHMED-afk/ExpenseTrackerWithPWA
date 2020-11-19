@@ -1,16 +1,21 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import "../App.css"
 import TransactionTile from './TransactionTile'
+import {GlobalContext} from '../Context/GlobalProvider'
 
 const TransactionHistory = () => {
+
+    const {transactions} = useContext(GlobalContext)
+    
     return (
         <div className="transaction-history">
             <p className="transaction-history-heading">
                 History
             </p>
             <hr />
-            <TransactionTile />
-            <TransactionTile />
+            {
+                transactions.map((transaction) => <TransactionTile transaction={transaction} key={transaction.id} />)
+            }
         </div>
     )
 }

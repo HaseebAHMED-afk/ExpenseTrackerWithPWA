@@ -4,6 +4,16 @@
   margin: 150px auto;
 
 }
+@media (max-width: 700px) {
+  .app {
+    width: 50%;
+  }
+}
+@media (max-width: 400px) {
+  .app {
+    width: 75%;
+  }
+}
 .main-heading{
   font-family: 'Roboto', sans-serif;
   color: rgb(40, 41, 41);
@@ -76,6 +86,7 @@
   margin: auto 0;
   box-shadow: 2px 3px 2px gray;
   display: flex;
+  cursor: pointer;
 }
 .plus{
   border-right: 5px rgb(24, 212, 24) solid;
@@ -83,23 +94,10 @@
 .minus{
   border-right: red 5px solid;
 }
-.del-btn{
-  background-color: red;
-  border: none;
-  color: white;
-  border-radius: 25%;
-  margin: 5px;
-  opacity: 0;
-  transition: 0.3s ease-in-out;
-  position: absolute;
-  left: 0;
-}
-.del-btn:hover{
-  opacity: 1;
-}
 .transaction-amount{
   float: right;
   margin: 5px;
+  margin-left: auto;
   font-family: 'Roboto';
 }
 .transaction-name{
@@ -158,6 +156,7 @@ input::-webkit-inner-spin-button {
   color: white;
   font-size: large;
   transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 .transaction-btn:hover{
   border: 3px solid rgb(2, 95, 9);

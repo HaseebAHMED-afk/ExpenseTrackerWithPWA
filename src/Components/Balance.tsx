@@ -1,8 +1,13 @@
-import React, {useState} from 'react'
+import React, {useContext} from 'react'
+import {GlobalContext} from '../Context/GlobalProvider'
 import "../App.css"
 
 const Balance = () => {
-    const [balance, setBalance] = useState(0)
+    const {transactions} = useContext(GlobalContext)
+
+    let amount = transactions.map((transaction) => transaction.amount);
+    let balance = amount.reduce((acc,item) => (acc += item),0).toFixed(2)
+
     return (
         <div className="balance">
             <p className="balance-heading">YOUR BALANCE:</p>
