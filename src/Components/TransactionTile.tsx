@@ -6,7 +6,7 @@ const TransactionTile = ({ transaction }: any) => {
 
   const { deleteTransaction } = useContext(GlobalContext);
 
-  const sign = transaction.amount > 0 ? "+" : "-";
+  const sign = transaction.amount > 0 ? "+" : "";
 
   return (
     <div className="transaction-tile" onClick={() => deleteTransaction(transaction.id)}>
