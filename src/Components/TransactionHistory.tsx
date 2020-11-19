@@ -10,6 +10,7 @@ const TransactionHistory = () => {
             </p>
             <hr />
             <TransactionTile />
+            <TransactionTile />
         </div>
     )
 }

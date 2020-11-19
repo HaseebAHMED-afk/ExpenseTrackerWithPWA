@@ -66,12 +66,38 @@
 
 .transaction-tile{
   display: flex;
+  margin: 10px 0;
 }
 .transaction-item{
   list-style-type: none;
-  background-color: blanchedalmond;
-  height: 30px;
+  background-color: rgb(247, 247, 247);
+  height: 35px;
   width: 100%;
-  text-align: center;
   margin: auto 0;
+  box-shadow: 2px 3px 2px gray;
+}
+.del-btn{
+  background-color: red;
+  border: none;
+  color: white;
+  border-radius: 25%;
+  margin: 5px;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  position: absolute;
+  left: 0;
+}
+.del-btn:hover{
+  opacity: 1;
+}
+.transaction-amount{
+  text-align: left;
+  margin: 5px;
+  font-family: 'Roboto';
+}
+.add-transaction{
+  text-align: left;
+}
+.add-transaction-heading{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

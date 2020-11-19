@@ -3,10 +3,10 @@ import '../App.css'
 
 const TransactionTile = () => {
     return (
-        <div className="transaction-tile">
-            <button>X</button>
+        <div className="transaction-tile" onClick = { () => console.log('pressed')} >
+            {/* <button className="del-btn">X</button> */}
              <li className="transaction-item">
-            <span> 1000</span>
+            <p className="transaction-amount">1000</p>
         </li>
         </div>
     )
