@@ -1,38 +1,77 @@
-.App {
+.app{
   text-align: center;
-}
+  width: 25%;
+  margin: 150px auto;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-heading{
+  font-family: 'Roboto', sans-serif;
+  color: rgb(40, 41, 41);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.balance{
+  text-align: left;
+}
+.balance-heading{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.balance-amount{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: xx-large;
+  margin: 25px;
+}
+.income-expense{
+  width: 100%;
+  text-align: center;
+  height: 50%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: rgb(250, 250, 250);
+}
+.income-section{
+  width: 50%;
+  border-bottom: green 2px solid;
+}
+.income-heading{
+  font-family: 'Roboto', sans-serif;
+  color: green;
+  margin: 15px;
+}
+.income-balance{
+  font-size: x-large;
+  margin: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.expense-section{
+  width: 50%;
+  border-bottom: red 2px solid;
+  border-left: 1px solid;
+  border-left-style: dashed;
+}
+.expense-heading{
+  font-family: 'Roboto', sans-serif;
+  color: red;
+  margin: 15px;
+}
+.expense-balance{
+  font-size: x-large;
+  margin: 15px;  
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.transaction-history{
+  text-align: left;
+}
+.transaction-history-heading{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.transaction-tile{
+  display: flex;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.transaction-item{
+  list-style-type: none;
+  background-color: blanchedalmond;
+  height: 30px;
+  width: 100%;
+  text-align: center;
+  margin: auto 0;
 }
