@@ -162,3 +162,12 @@ input::-webkit-inner-spin-button {
   border: 3px solid rgb(2, 95, 9);
   background-color:  rgb(48, 218, 26);
 }
+.no-internet-heading{
+  text-align: center;
+  margin: 250px auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.no-internet-para{
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
