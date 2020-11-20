@@ -18,15 +18,20 @@ interface transactionObject {
 const newTransaction = (event: any) => {
     event.preventDefault();
 
-    const newTransaction : transactionObject = {
-        id: Math.floor( Math.random() * 100000 ),
-        name: name,
-        amount: +amount
+    if(name === "" || amount === "0.00"){
+        alert("Please Enter Something")
     }
-
-    addTransaction(newTransaction);
-    setAmount("0.00")
-    setName("")
+    else{
+        const newTransaction : transactionObject = {
+            id: Math.floor( Math.random() * 100000 ),
+            name: name,
+            amount: +amount
+        }
+    
+        addTransaction(newTransaction);
+        setAmount("0.00")
+        setName("")
+    }
 }
 
 
