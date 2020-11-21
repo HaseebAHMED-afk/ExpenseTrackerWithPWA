@@ -4,4 +4,4 @@ It is an application which is a Progressive Web App and has offline capability a
 
 The project is hosted to netlify at this URL:
 
-[https://expensetrackerpwabyhaseebahmed.netlify.app/](ExpenseTrackerPWA)
+[ExpenseTrackerPWA](https://expensetrackerpwabyhaseebahmed.netlify.app/)
